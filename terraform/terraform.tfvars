@@ -1,2 +1,2 @@
-storage_account_name = "praveenstorage12345"
+storage_account_name = "praveenst56789"
 location             = "canadacentral"
