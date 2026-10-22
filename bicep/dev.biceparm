@@ -1,0 +1,7 @@
+using 'main.bicep'
+
+param vnetName = 'vnet-iac-dev'
+param tags = {
+  environment: 'dev'
+  project: 'iac-foundation'
+}
