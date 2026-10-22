@@ -1,5 +1,13 @@
+
 terraform {
   required_version = ">= 1.5.0"
+
+  backend "azurerm" {
+    resource_group_name  = "rg-tfstate"
+    storage_account_name = "praveentfstate2026"
+    container_name       = "tfstate"
+    key                  = "iac-foundation.tfstate"
+  }
 
   required_providers {
     azurerm = {
@@ -28,3 +36,4 @@ resource "azurerm_storage_account" "main" {
   min_tls_version          = "TLS1_2"
   tags                     = var.tags
 }
+

@@ -1,3 +1,11 @@
 .terraform/
 *.tfstate
 *.tfstate.*
+
+# Terraform generated files
+.terraform/
+tfplan
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
